@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				gerenciar: {
+					blue: '#3b5fe2',
+					purple: '#8158e5',
+					pink: '#e55e8a',
+					darkblue: '#2a3b8f',
+					lightpink: '#f3a4c4'
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out'
+			},
+			backgroundImage: {
+				'hero-pattern': "url('/public/lovable-uploads/a210a798-6fbb-4c2b-8846-c22f009b01ca.png')",
+				'gradient-gerenciar': 'linear-gradient(90deg, #3b5fe2 0%, #8158e5 50%, #e55e8a 100%)'
 			}
 		}
 	},
